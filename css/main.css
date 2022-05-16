@@ -1,0 +1,208 @@
+body{
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;    
+}
+header{
+    height: 80px;
+    width: 100%;
+}
+main{
+    display: flex;
+    width: 100%;
+    max-width: 1900px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#img-logo{
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+textarea{outline:none;
+    border:none}
+textarea{
+    resize:none;
+    background:none;
+    font-family:'Inter', sans-serif;
+}
+.titulos{
+    font-weight: bold;
+     font-size: 35px;
+    margin-top: 10px;
+}
+    
+.seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    align-items: left;
+    position: relative;
+    margin: auto;
+    padding: 2em;
+    width: 40%;
+    height: 670px;
+}
+.seccion textarea{
+    height: 600px;
+    font-size: 30px;
+}
+.seccion h1{margin-bottom: 15px;}
+.seccion h5{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.botones{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 10px 10px 0;
+}
+
+.seccion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 570px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding: 3em;
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #d3d3d3;
+}
+.seccion2 textarea{
+    height: 500px;
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    font-size: 30px;
+}
+
+.contenido-empty h2, p{margin-top: 25px;}
+.contenido-empty p{font-size: 20px;}
+.img-muneco{
+    position: relative;
+    margin: auto;
+}
+
+#boton-copiar{
+    width: 100%;
+    margin-top: 10px;
+}
+#boton-copiar:active{background: #125fbd;}
+
+.boton{
+    width: 48%;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    color: #F3F5FC;
+    background-color: #0A3871;
+    border: 1px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.boton:hover{transform: scale(1.03);}
+#boton2{
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
+footer{
+    text-align: center;
+    padding: 2em;
+    font-size: 15px;
+}
+
+.invisible{display:none;}
+
+@media screen and (max-width: 770px) and (min-width:376px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .seccion{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+    }
+    .seccion2{
+        display: flex;
+        width: 85%;
+        padding: 1.5em;
+        margin: auto;
+        height: auto;
+    }
+
+    .seccion2 textarea{
+        height: auto;
+        width: 90%;
+    }
+
+    .botones{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .img-muneco{display: none;}
+    footer{
+        margin-top: 2em;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 376px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .seccion{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 2em;
+    }
+    .seccion2{
+        display: flex;
+        width: 85%;
+        padding: 1.5em;
+        margin: auto;
+        height: auto;
+    }
+
+    .seccion2 textarea{
+        height: auto;
+        width: 90%;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .boton{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .img-muneco{display: none;}
+    footer{
+        width: 90%;
+        margin:auto;
+    }
+}
+
+
